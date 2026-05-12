@@ -24,7 +24,14 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+My introduction to nestjs framework which is used for building scalable *Node.js* server side application. It is a progesssive javascript framework but supports typescript fully. Under the hood, it uses express so it is easy to use. I used it for creating and testing authentication in nestjs. For this, I started by creating an auth controller. Then, setting up its service with 
+register method for registering user, 
+validateUser method for validating the user, 
+login method for logging in the user. For the authentication, I used custom and built in decorators.
+
+In the authentication, I used local strategy and jwt strategy. Local strategy is used for validating the login credentials. And jwt startegy is used for protecting routes after login. Both use passport strategy internally for authentication. Also, the authentication used for the jwt strategy uses usual jwt token: both access token and refresh token, thus, storing the token in cookie.
+
+Nest.js uses both decorators and dto for validation.
 
 ## Project setup
 
